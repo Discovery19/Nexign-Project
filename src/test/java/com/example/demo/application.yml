@@ -1,0 +1,18 @@
+app:
+  scheduler:
+    enable: false
+    interval: 1m
+
+spring:
+  application:
+    name: nexign
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/nexign
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
